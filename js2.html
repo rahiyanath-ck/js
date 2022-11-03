@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js2</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    button{
+        background-color: aqua;
+        width:70px;
+        height: 20px;
+    }
+</style>
+<body>
+    <label for="">Enter first number:</label>
+    <input type="text" id="num1">
+    <br><br>
+    <label for="">Enter Second number:</label>
+    <input type="text" id="num2" >
+    <br><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <br><br>
+    <label for="">Result:</label>
+    <input type="text" id="result">
+    <script>
+        function add(){
+            a=Number(document.getElementById("num1").value);
+            b=Number(document.getElementById("num2").value);
+            c=a+b;
+            document.getElementById("result").value=c;
+        }
+        function sub(){
+            a=Number(document.getElementById("num1").value);
+            b=Number(document.getElementById("num2").value);
+            c=a-b;
+            document.getElementById("result").value=c;
+        }
+        function mul(){
+            a=Number(document.getElementById("num1").value);
+            b=Number(document.getElementById("num2").value);
+            c=a*b;
+            document.getElementById("result").value=c;
+        }
+        function div(){
+            a=Number(document.getElementById("num1").value);
+            b=Number(document.getElementById("num2").value);
+            c=a/b;
+            document.getElementById("result").value=c;
+        }
+    
+
+
+    </script>
+</body>
+</html>

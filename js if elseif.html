@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elseif</title>
+</head>
+<body>
+    <p id="demo">hello world</p>
+    <script>
+        const hours=new Date().getHours();
+        let greeting;
+        if(hours>16){
+            greeting="hello";
+        }
+        else if(hours>15){
+            greeting="hi";
+        }
+        else{
+            greeting="welcome";
+        }
+        document.getElementById("demo").innerHTML=greeting;
+    </script>
+</body>
+</html>
