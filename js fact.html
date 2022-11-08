@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js fact</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button onclick="fact()">fact</button>
+    <input type="text" id="result">
+    <script>
+        let i;
+        let fact1=1;
+        function fact(){
+        let a=document.getElementById("num").value;
+        for(i=1;i<=a;i++){
+            fact1=fact1*i;   
+        }
+        document.getElementById("result").value=fact1;
+    }
+    </script>
+</body>
+</html>

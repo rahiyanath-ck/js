@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js prime</title>
+</head>
+<body>
+    <label> enter the number:</label>
+    <input type="text" id="num">
+    <button onclick="prime()">prime</button>
+    <p id="demo"></p>
+    <script>
+        let num;
+        let flag=0;
+        let i;
+        function prime(){
+        let a=document.getElementById("num").value;
+        if(num==0 || num==1){
+            flag=1;
+        }
+        for(i=2;i<=(a/2);i++){
+            if((a)%i==0){
+                flag=1;
+                break;
+            }
+        }
+        if (flag == 0){
+            document.getElementById("demo").innerHTML="prime";
+        }
+        else{
+            document.getElementById("demo").innerHTML="not prime";
+        }
+    }
+    </script>
+</body>
+</html>
+
+
